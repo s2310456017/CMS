@@ -80,21 +80,16 @@ plugin.tx_felogin_login.view.layoutRootPath = EXT:kwm24/Resources/Private/Layout
 ########## FEMANAGER ###########
 ################################
 
-#plugin.tx_femanager {
-#    view {
-#        templateRootPath = EXT:kwm24/Resources/Private/Templates/
-#        partialRootPath = EXT:kwm24/Resources/Private/Partials/
-#        layoutRootPath = EXT:kwm24/Resources/Private/Layouts/
-#    }
-#
-#    persistence {
-#        #Default storage PID
-#        storagePid = 11
-#    }
-#}
+plugin.tx_femanager {
+    view {
+        templateRootPath = EXT:kwm24/Resources/Private/Templates/
+        partialRootPath = EXT:kwm24/Resources/Private/Partials/
+        layoutRootPath = EXT:kwm24/Resources/Private/Layouts/
+    }
 
-plugin.tx_femanager.persistence.storagePid = 11
-plugin.tx_femanager.view.templateRootPath = EXT:kwm24/Resources/Private/Templates/
-plugin.tx_femanager.view.partialRootPath = EXT:kwm24/Resources/Private/Partials/
-plugin.tx_femanager.view.layoutRootPath = EXT:kwm24/Resources/Private/Layouts/
-
+    persistence {
+        #Default storage PID
+        storagePid = 11
+    }
+    _LOCAL_LANG.de = EXT:kwm24/Resources/Private/Language/de.locallang.xlf
+}

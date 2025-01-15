@@ -10,6 +10,29 @@
         		<source>Read more</source>
                 <target>hier weiterlesen</target>
         	</trans-unit>
+        	<trans-unit id="quote" xml:space="preserve">
+                    	    <target>Zitat</target>
+                         </trans-unit>
+                         <trans-unit id="tx_femanager_domain_model_user.firstName" xml:space="preserve">
+                         	<source>Firstname</source>
+                         	<target>Vorname</target>
+                         </trans-unit>
+                         <trans-unit id="tx_femanager_domain_model_user.lastName">
+                         	<source>Lastname</source>
+                         	<target>Nachname</target>
+                         </trans-unit>
+                         <trans-unit id="tx_femanager_domain_model_user.email">
+                         	<source>Email</source>
+                         	<target>E-Mail</target>
+                         </trans-unit>
+                         <trans-unit id="tx_femanager_domain_model_user.password">
+                         	<source>Password</source>
+                         	<target>Neues Passwort</target>
+                         </trans-unit>
+                         <trans-unit id="tx_femanager_domain_model_user.password_repeat">
+                            <source>Repeat Password</source>
+                            <target>Passwort bestätigen</target>
+                         </trans-unit>
         </body>
     </file>
 </xliff>

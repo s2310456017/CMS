@@ -9,6 +9,7 @@
   color: #000;
 }
 
+//nach dem letzten kein |
 .navbar-language a:not(:last-child)::after {
   content: "|"; /* Trennzeichen zwischen den Links */
   margin-left: 5px;

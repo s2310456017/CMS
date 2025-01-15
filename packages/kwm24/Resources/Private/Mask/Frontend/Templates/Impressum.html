@@ -1,0 +1,56 @@
+<!--<f:if condition="{data.tx_mask_name}">-->
+<!--    {data.tx_mask_name -> f:format.nl2br()}-->
+<!--</f:if>-->
+<!--<f:if condition="{data.tx_mask_adresse}">-->
+<!--    {data.tx_mask_adresse -> f:format.nl2br()}-->
+<!--</f:if>-->
+<!--<f:if condition="{data.tx_mask_telefonnummer}">-->
+<!--    {data.tx_mask_telefonnummer}-->
+<!--</f:if>-->
+<!--<f:if condition="{data.tx_mask_email}">-->
+<!--    <f:link.email email="{data.tx_mask_email}"/>-->
+<!--</f:if>-->
+
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      xmlns:bk2k="http://typo3.org/ns/BK2K/BootstrapPackage/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default"/>
+<f:section name="Main">
+
+    <!-- Klickbare h2-Überschrift, die zur Impressum-Seite führt -->
+    <h2 id="impressumLink">
+        Impressum
+    </h2>
+
+    <!-- Die restlichen Mask-Felder werden hier angezeigt -->
+    <div id="impressum" style="margin-top: 20px;">
+
+        <!-- Name des Unternehmens -->
+        <f:if condition="{data.tx_mask_name}">
+            <p>{data.tx_mask_name}</p>
+        </f:if>
+
+        <!-- Adresse -->
+        <f:if condition="{data.tx_mask_adresse}">
+            <p>{data.tx_mask_adresse}</p>
+        </f:if>
+
+        <!-- Telefonnummer -->
+        <f:if condition="{data.tx_mask_telefonnummer}">
+            <p>{data.tx_mask_telefonnummer}</p>
+        </f:if>
+
+        <!-- E-Mail Adresse -->
+        <f:if condition="{data.tx_mask_email}">
+            <p><f:link.email email="{data.tx_mask_email}" /> </p>
+        </f:if>
+    </div>
+
+    <!-- JavaScript zur Weiterleitung -->
+    <script>
+        document.getElementById("impressumLink").addEventListener("click", function() {
+            window.location.href = "http://cms24.s2310456017.student.kwmhgb.at/impressum";
+        });
+    </script>
+
+</f:section>
+</html>

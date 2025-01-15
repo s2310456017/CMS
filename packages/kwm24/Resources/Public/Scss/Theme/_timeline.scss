@@ -1,0 +1,24 @@
+//farbe timeline
+.timeline-item-inner {
+  border: 2px solid transparent;
+}
+.timeline-item-inner.br-dark-red {
+  border-color: #601834;
+}
+.timeline-item-inner.br-dark-purple {
+  border-color: #47193E;
+}
+.timeline-item-inner.br-orange {
+  border-color: #F09236;
+}
+.timeline-item-inner.br-yellow {
+  border-color: #F9C94B;
+}
+
+.timeline-item-header-headline{
+  color:#601834;
+  font-family: 'Segoe Print', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+}

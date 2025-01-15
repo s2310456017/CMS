@@ -1,0 +1,51 @@
+//Umrandung + Hover Button
+.list-group {
+   --bs-list-group-border-radius: 0;
+  --bs-list-group-border-color: black;
+  --bs-list-group-action-hover-bg: grey;
+  --bs-list-group-action-hover-color: black;
+}
+
+//Schriftart für Links in h3-Elementen mit itemprop="headline"
+h3[itemprop="headline"] {
+  a {
+    font-family: 'Segoe Print', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  color: #601834 !important;
+  text-align: left;
+}
+
+//Farbe für Links ohne Klasse innerhalb eines Elements mit der Klasse .frame
+.frame a[class=""], .frame a:not([class]) {
+  color: #601834;
+}
+
+//Beschreibungstext
+.lead{
+  font-family: 'Calibri', sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  color: #000000;
+}
+
+//---------------------------------------------
+//News detail
+//--------------------------------------------
+//Entfernt den unteren Rand
+.border-bottom {
+  border-bottom: none !important;
+}
+
+h1{
+  color:#601834;
+  font-family: 'Segoe Print', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+}
+
+
+

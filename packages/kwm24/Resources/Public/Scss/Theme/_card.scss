@@ -1,6 +1,43 @@
+//Überschrift im Card
 .card{
   .card-title{
     font-weight: bold;
-    text-align: center;
+    text-align: left;
+    color:#601834;
+    font-family: 'Segoe Print', sans-serif;
+    font-size: 20px;
   }
 }
+
+//Setzt Cards die mehrer Elemente haben schwarz
+.card-group-element.card-group-element-align-center.card-group-element-columns-3 {
+  //alle .card-Elemente innerhalb dieses Containers
+  .card-group-element-item {
+    .card {
+      background-color: black;
+      .card-title
+      {
+        text-align: center;
+      }
+    }
+  }
+}
+
+//Hintergrundfarben Frames
+.frame-background-primary {
+  --frame-background: #F9C94B !important;  /* Neue Farbe für Primary */
+}
+.frame-background-secondary {
+  --frame-background: #F09236 !important;  /* Neue Farbe für Secondary */
+}
+
+.frame-background-tertiary {
+  --frame-background: #601834 !important;  /* Neue Farbe für Tertiary */
+}
+
+.frame-background-quaternary {
+  --frame-background: #47193E !important;  /* Neue Farbe für Quaternary */
+}
+
+
+

@@ -39,3 +39,26 @@ lib.maskContentElement {
         5 = EXT:bootstrap_package/Resources/Private/Layouts/ContentElements
     }
 }
+
+##FE Manager
+#plugin.tx_femanager {
+#    settings {
+#        storagePid = 11
+#        new {
+#            usergroup = 3
+#        }
+#    }
+#}
+
+plugin.tx_femanager {
+    persistence {
+        storagePid = 11
+    }
+
+    settings {
+        storagePid = 11
+        new {
+            usergroup = 3
+        }
+    }
+}

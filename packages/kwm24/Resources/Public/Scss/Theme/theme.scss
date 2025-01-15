@@ -9,7 +9,156 @@
 @import "EXT:bootstrap_package/Resources/Public/Scss/bootstrap5/theme";
 
 @import "card";
+@import "main_header";
+@import "button";
+@import "news";
+@import "accordion";
+@import "timeline";
+@import "footer";
 
-#page-header{
-  background-color: blue !important;
+//Link Hover
+:root {
+    --frame-link-hover-color: #F09236;
 }
+
+//h2{
+//  color:#601834;
+//  font-family: 'Segoe Print', sans-serif;
+//  font-size: 45px;
+//  font-weight: bold;
+//  text-align: center;
+//}
+//
+//h3{
+//  color:#F09236;
+//  font-family: 'Segoe Print', sans-serif;
+//  font-size: 20px;
+//  font-weight: bold;
+//  text-align: center;
+//}
+//
+//.text-justify {
+//  font-family: 'Calibri', sans-serif;
+//  font-size: 15px;
+//  font-weight: normal;
+//  color: #000000;
+//  margin-left: 10%; /* Linker Einzug */
+//  margin-right: 10%; /* Rechter Einzug */
+//}
+
+h2, h3, .text-justify {
+  font-family: 'Segoe Print', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  color: #601834;  // Standardfarbe für h2, für h3 wird später geändert
+
+  // Standardgrößen für größere Bildschirme
+  font-size: 45px;
+
+  // Responsives Design für Schriftgrößen
+  @media (max-width: 1200px) {
+    font-size: 40px;
+  }
+
+  @media (max-width: 992px) {
+    font-size: 35px;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 30px;
+  }
+
+  @media (max-width: 576px) {
+    font-size: 25px;
+  }
+}
+
+h3 {
+  color: #F09236;
+  font-weight: bold;
+  text-align: center;
+  font-size: 20px;
+
+  // Responsive Design für h3
+  @media (max-width: 1200px) {
+    font-size: 18px;
+  }
+
+  @media (max-width: 992px) {
+    font-size: 16px;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
+
+  @media (max-width: 576px) {
+    font-size: 12px;
+  }
+}
+
+.text-justify {
+  font-family: 'Calibri', sans-serif;
+  font-weight: normal;
+  color: #000000;
+  font-size: 15px;
+  text-align: justify;
+  margin-left: 10%;
+  margin-right: 10%;
+
+  // Responsives Design für .text-justify
+  @media (max-width: 1200px) {
+    font-size: 14px;
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+
+  @media (max-width: 992px) {
+    font-size: 13px;
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 12px;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  @media (max-width: 576px) {
+    font-size: 11px;
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+}
+
+
+//<p> innerhalb Frames
+div.frame.frame-default.frame-type-text.frame-layout-default.frame-size-default.frame-height-default.frame-background-none.frame-space-before-none.frame-space-after-none.frame-no-backgroundimage
+.frame-group-container .frame-group-inner .frame-container.frame-container-default .frame-inner p {
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+//.gallery-row {
+//
+//  justify-content: center;
+//}
+
+//trennstrich
+hr {
+  color: black;
+  border: none;
+  height: 3px;
+  background-color: black;
+  opacity: 1;
+}
+
+//Formular radiobutton
+.form-check-input:checked {
+  background-color: #F09236;
+  border-color: #F9C94B;
+}
+
+
+

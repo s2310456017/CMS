@@ -1,0 +1,64 @@
+.navbar-language {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px; //Abstand zwischen den Sprachen
+}
+
+.navbar-language a {
+  text-decoration: none;
+  color: #000;
+}
+
+.navbar-language a:not(:last-child)::after {
+  content: "|"; /* Trennzeichen zwischen den Links */
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+//Unterstreichungen der Menüseiten
+.navbar-mainnavigation {
+  --mainnavigation-hightlight:  #F09236;
+}
+
+//Ermöglicht die Verwendung von `position: absolute`
+.navbar-mainnavigation .nav-item {
+  position: relative;
+}
+
+.navbar-mainnavigation .nav-item::after {
+  content: "|";
+  color: black;
+  position: absolute; // Positioniert den Strich relativ zum Eltern-Element
+  right: -10px; //Abstand zum rechten Rand
+  top: 50%; // Zentriert den Strich vertikal
+  transform: translateY(-50%); // Korrigiert die Zentrierung
+}
+
+//Entfernt Strich nach letzten Navigationselement
+.navbar-mainnavigation .nav-item:last-child::after {
+  content: "";
+}
+
+.gallery-row {
+  justify-content: center;
+}
+
+#page-header {
+  background-color: #DADADA !important; /* Erzwingt die graue Hintergrundfarbe */
+}
+
+#page-header .nav-link {
+  color: #000000;
+  background-color: #DADADA;
+}
+
+//Hintergrundfarbe bei Unterseiten
+.dropdown-menu {
+  --bs-dropdown-bg: #DADADA;
+}
+
+//Sprachlink
+a {
+  color: black;
+  text-decoration: none;
+}

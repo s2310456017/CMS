@@ -1,0 +1,148 @@
+//.footer-section-content{
+//  color: #000000;
+//  background-color:#DADADA;
+//}
+//.section-row {
+//  align-items: center;
+//}
+//
+///* Versteckt h3-Elemente, wenn sie irgendwo innerhalb eines Containers mit der ID page-footer sind */
+//#page-footer * h3 {
+//  display: none;
+//}
+//#page-footer * p {
+//  margin-left: 20%;
+//  margin-right: 20%;
+//}
+//
+//.footer-section-meta {
+//  display: none;
+//}
+//
+////impressum
+//#impressum p{
+//  color: black;
+//}
+//
+////Login
+//#page-footer * .frame-inner{
+//  color: black;
+//}
+
+/* Footer Section */
+.footer-section-content {
+  color: #000000;
+  background-color: #DADADA;
+  padding: 20px;
+
+  @media (max-width: 1200px) {
+    padding: 15px;
+  }
+
+  @media (max-width: 992px) {
+    padding: 12px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 10px;
+  }
+
+  @media (max-width: 576px) {
+    padding: 8px;
+  }
+}
+
+/* Section Row */
+.section-row {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @media (max-width: 768px) {
+    justify-content: center;
+  }
+
+  @media (max-width: 576px) {
+    justify-content: flex-start;
+  }
+}
+
+/* Versteckt h3-Elemente im Footer */
+#page-footer * h3 {
+  display: none;
+}
+
+/* Styling für Paragraphen im Footer */
+#page-footer * p {
+  margin-left: 20%;
+  margin-right: 20%;
+
+  @media (max-width: 1200px) {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
+  @media (max-width: 992px) {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  @media (max-width: 768px) {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  @media (max-width: 576px) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+/* Footer Meta Section */
+.footer-section-meta {
+  display: none;
+}
+
+/* Impressum */
+#impressum p {
+  color: black;
+  font-size: 16px;
+
+  @media (max-width: 1200px) {
+    font-size: 15px;
+  }
+
+  @media (max-width: 992px) {
+    font-size: 14px;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 13px;
+  }
+
+  @media (max-width: 576px) {
+    font-size: 12px;
+  }
+}
+
+/* Login Section */
+#page-footer * .frame-inner {
+  color: black;
+
+  @media (max-width: 1200px) {
+    font-size: 16px;
+  }
+
+  @media (max-width: 992px) {
+    font-size: 15px;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
+
+  @media (max-width: 576px) {
+    font-size: 13px;
+  }
+}

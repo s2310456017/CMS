@@ -91,5 +91,4 @@ plugin.tx_femanager {
         #Default storage PID
         storagePid = 11
     }
-    _LOCAL_LANG.de = EXT:kwm24/Resources/Private/Language/de.locallang.xlf
 }

@@ -21,31 +21,6 @@
     --frame-link-hover-color: #F09236;
 }
 
-//h2{
-//  color:#601834;
-//  font-family: 'Segoe Print', sans-serif;
-//  font-size: 45px;
-//  font-weight: bold;
-//  text-align: center;
-//}
-//
-//h3{
-//  color:#F09236;
-//  font-family: 'Segoe Print', sans-serif;
-//  font-size: 20px;
-//  font-weight: bold;
-//  text-align: center;
-//}
-//
-//.text-justify {
-//  font-family: 'Calibri', sans-serif;
-//  font-size: 15px;
-//  font-weight: normal;
-//  color: #000000;
-//  margin-left: 10%; /* Linker Einzug */
-//  margin-right: 10%; /* Rechter Einzug */
-//}
-
 h2, h3, .text-justify {
   font-family: 'Segoe Print', sans-serif;
   font-weight: bold;
@@ -140,11 +115,6 @@ div.frame.frame-default.frame-type-text.frame-layout-default.frame-size-default.
   margin-right: 25%;
 }
 
-//.gallery-row {
-//
-//  justify-content: center;
-//}
-
 //trennstrich
 hr {
   color: black;
@@ -160,5 +130,8 @@ hr {
   border-color: #F9C94B;
 }
 
-
+//Überschrift Registrierung
+legend {
+  display: none;
+}
 

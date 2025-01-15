@@ -1,16 +1,80 @@
-//Allgemeiner Button zustand
-.btn{
-  color:#F09236;
-  background-color: #DADADA;
+////Allgemeiner Button zustand
+//.btn{
+//  color:#F09236;
+//  background-color: #DADADA;
+//  font-family: 'Calibri', sans-serif;
+//  font-size: 20px; /* Schriftgröße */
+//  text-align: center; /* Text zentrieren */
+//  border: 2px solid #000000;
+//  border-radius: 10px;
+//}
+//
+////Stile btn-primary + Submit-Buttons innerhalb .frame-type-felogin_login
+//.btn-primary, .frame-type-felogin_login input[type="submit"] {
+//  --bs-btn-color: #000000; /* Textfarbe schwarz */
+//  --bs-btn-bg: #eaebec; /* Hintergrundfarbe hellgrau */
+//  --bs-btn-border-color: #eaebec; /* Randfarbe hellgrau */
+//  --bs-btn-hover-color: #000000; /* Textfarbe schwarz bei Hover */
+//  --bs-btn-hover-bg: #edeeef; /* Hintergrundfarbe hellgrau bei Hover */
+//  --bs-btn-hover-border-color: #ecedee; /* Randfarbe hellgrau bei Hover */
+//  --bs-btn-focus-shadow-rgb: 199, 200, 201; /* Fokus Schatten */
+//  --bs-btn-active-color: #000000; /* Textfarbe schwarz bei aktivem Zustand */
+//  --bs-btn-active-bg: #eeeff0; /* Hintergrundfarbe bei aktivem Zustand */
+//  --bs-btn-active-border-color: #ecedee; /* Randfarbe bei aktivem Zustand */
+//  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); /* Schatteneffekt bei aktivem Zustand */
+//  --bs-btn-disabled-color: #000000; /* Textfarbe schwarz bei deaktiviertem Zustand */
+//  --bs-btn-disabled-bg: #eaebec; /* Hintergrundfarbe hellgrau bei deaktiviertem Zustand */
+//  --bs-btn-disabled-border-color: #eaebec; /* Randfarbe hellgrau bei deaktiviertem Zustand */
+//}
+//
+//
+////Login Button
+// .frame-type-felogin_login input[type="submit"] {
+//  background-color: transparent !important;  /* Hintergrundfarbe entfernen */
+//  border: none !important;                    /* Rand entfernen */
+//  color: #000000 !important;                  /* Textfarbe */
+//  font-family: "Calibri", sans-serif !important; /* Schriftart */
+//  font-size: 20px !important;                 /* Schriftgröße */
+//  margin-right: 15%;
+//  padding: 0 !important;                      /* Keine Polsterung */
+//  box-shadow: none !important;                /* Kein Schatten */
+//  cursor: default !important;                 /* Kein Zeiger-Cursor */
+//  text-transform: none !important;            /* Keine Großschreibung */
+//  width: 100% !important;                     /* Button auf volle Breite setzen */
+//}
+//
+////Kontaktformular
+//.btn-outline-primary {
+//  --bs-btn-color: #000000; /* Textfarbe schwarz */
+//  --bs-btn-bg: #eaebec; /* Hintergrundfarbe hellgrau */
+//  --bs-btn-border-color: #eaebec; /* Randfarbe hellgrau */
+//  --bs-btn-hover-color: #000000; /* Textfarbe schwarz bei Hover */
+//  --bs-btn-hover-bg: #edeeef; /* Hintergrundfarbe hellgrau bei Hover */
+//  --bs-btn-hover-border-color: #ecedee; /* Randfarbe hellgrau bei Hover */
+//  --bs-btn-focus-shadow-rgb: 199, 200, 201; /* Fokus Schatten */
+//  --bs-btn-active-color: #000000; /* Textfarbe schwarz bei aktivem Zustand */
+//  --bs-btn-active-bg: #eeeff0; /* Hintergrundfarbe bei aktivem Zustand */
+//  --bs-btn-active-border-color: #ecedee; /* Randfarbe bei aktivem Zustand */
+//  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); /* Schatteneffekt bei aktivem Zustand */
+//  --bs-btn-disabled-color: #000000; /* Textfarbe schwarz bei deaktiviertem Zustand */
+//  --bs-btn-disabled-bg: #eaebec; /* Hintergrundfarbe hellgrau bei deaktiviertem Zustand */
+//  --bs-btn-disabled-border-color: #eaebec; /* Randfarbe hellgrau bei deaktiviertem Zustand */
+//}
+
+
+// Allgemeiner Button Zustand
+.btn {
+  color: #F09236; /* Textfarbe schwarz */
+  background-color: #DADADA; /* Hintergrundfarbe hellgrau */
   font-family: 'Calibri', sans-serif;
-  font-size: 20px; /* Schriftgröße */
-  text-align: center; /* Text zentrieren */
-  border: 2px solid #000000;
+  font-size: 20px;
+  text-align: center;
+  border: 2px solid #000000; /* Randfarbe schwarz */
   border-radius: 10px;
 }
 
-//Stile btn-primary + Submit-Buttons innerhalb .frame-type-felogin_login
-.btn-primary, .frame-type-felogin_login input[type="submit"] {
+// Gemeinsame Stile für .btn-primary, .btn-outline-primary und .frame-type-felogin_login input[type="submit"]
+.btn-primary, .btn-outline-primary, .frame-type-felogin_login input[type="submit"] {
   --bs-btn-color: #000000; /* Textfarbe schwarz */
   --bs-btn-bg: #eaebec; /* Hintergrundfarbe hellgrau */
   --bs-btn-border-color: #eaebec; /* Randfarbe hellgrau */
@@ -27,36 +91,17 @@
   --bs-btn-disabled-border-color: #eaebec; /* Randfarbe hellgrau bei deaktiviertem Zustand */
 }
 
-
-//Login Button
- .frame-type-felogin_login input[type="submit"] {
-  background-color: transparent !important;  /* Hintergrundfarbe entfernen */
-  border: none !important;                    /* Rand entfernen */
-  color: #000000 !important;                  /* Textfarbe */
-  font-family: "Calibri", sans-serif !important; /* Schriftart */
-  font-size: 20px !important;                 /* Schriftgröße */
+// Login Button spezifische Stile
+.frame-type-felogin_login input[type="submit"] {
+  background-color: transparent !important;
+  border: none !important;
+  color: #000000 !important; /* Textfarbe schwarz */
+  font-family: "Calibri", sans-serif !important;
+  font-size: 20px !important;
   margin-right: 15%;
-  padding: 0 !important;                      /* Keine Polsterung */
-  box-shadow: none !important;                /* Kein Schatten */
-  cursor: default !important;                 /* Kein Zeiger-Cursor */
-  text-transform: none !important;            /* Keine Großschreibung */
-  width: 100% !important;                     /* Button auf volle Breite setzen */
-}
-
-//Kontaktformular
-.btn-outline-primary {
-  --bs-btn-color: #000000; /* Textfarbe schwarz */
-  --bs-btn-bg: #eaebec; /* Hintergrundfarbe hellgrau */
-  --bs-btn-border-color: #eaebec; /* Randfarbe hellgrau */
-  --bs-btn-hover-color: #000000; /* Textfarbe schwarz bei Hover */
-  --bs-btn-hover-bg: #edeeef; /* Hintergrundfarbe hellgrau bei Hover */
-  --bs-btn-hover-border-color: #ecedee; /* Randfarbe hellgrau bei Hover */
-  --bs-btn-focus-shadow-rgb: 199, 200, 201; /* Fokus Schatten */
-  --bs-btn-active-color: #000000; /* Textfarbe schwarz bei aktivem Zustand */
-  --bs-btn-active-bg: #eeeff0; /* Hintergrundfarbe bei aktivem Zustand */
-  --bs-btn-active-border-color: #ecedee; /* Randfarbe bei aktivem Zustand */
-  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); /* Schatteneffekt bei aktivem Zustand */
-  --bs-btn-disabled-color: #000000; /* Textfarbe schwarz bei deaktiviertem Zustand */
-  --bs-btn-disabled-bg: #eaebec; /* Hintergrundfarbe hellgrau bei deaktiviertem Zustand */
-  --bs-btn-disabled-border-color: #eaebec; /* Randfarbe hellgrau bei deaktiviertem Zustand */
+  padding: 0 !important;
+  box-shadow: none !important;
+  cursor: default !important;
+  text-transform: none !important;
+  width: 100% !important;
 }
